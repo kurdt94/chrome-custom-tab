@@ -1,0 +1,21 @@
+{
+  "name": "Custom Tab",
+  "version": "1.0.0",
+  "description": "Replace the Chrome New Tab page with a custom URL or page.",
+  "manifest_version": 3,
+  "chrome_url_overrides": {
+    "newtab": "redirect.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_title": "Custom Tab Settings",
+    "default_popup": "options.html"
+  }
+}
+
